@@ -7,25 +7,20 @@ users = [
     {"id": 6, "name": "khan", "age": 40, "city": "NY", "salary": 95000, "active": True},
 ]
 
-#problem 1 find active user
+class UserData:
+    def __init__(self, users):
+        self.users = users
 
-def find_active_user(user) :
-    result = []
-    for u in user:
-        if u["active"] == True:
-            city_name = u["city"]
-            result.append(city_name)
-    return result
+    def get_active_user(self):
+        result = {}
 
-r = find_active_user(users)
-# print(r)
+        for u in self.users:
+            if u["age"] > 18:
+                country = u["city"].title()
+                if country not in result:
+                    result[country] = []
+                    result[country].append(u["name"].title())
+        return result
 
-
-def find_user_based_age(u) :
-    result = []
-    for u in u:
-        if u["age"] > 18:
-            result.append(f"Name: {u['name'].title()}")
-    return result
-
-print(find_user_based_age(users))
+ua = UserData(users)
+print(ua.get_active_user())
