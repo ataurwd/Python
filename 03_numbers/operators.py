@@ -15,4 +15,7 @@ count *= 2
 print(f"Resulting count: {count}")
 
 # Assignment 1: Calculate the remainder of 25 divided by 4 using the modulus operator.
+reminder_number = 25 % 4
+print(f"The remainder of 25 divided by 4 is: {reminder_number}")
+
 # Assignment 2: Use an assignment operator to double the value of a variable score = 50.

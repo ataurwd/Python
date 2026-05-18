@@ -6,7 +6,8 @@ colors.insert(1, "orange")
 last_item = colors.pop()
 print(f"Modified colors: {colors}")
 print(f"Removed item: {last_item}")
-
+colors.insert(1, "green")
+print(f"Colors after adding 'green' again: {colors}")
 # Example 2: Sorting and Reverse
 nums = [4, 2, 9, 1]
 nums.sort()

@@ -9,4 +9,10 @@ print(f"Middle slice: {numbers[2:5]}")
 print(f"Total items: {len(numbers)}")
 
 # Assignment 1: Replace the second element in a list with "mango".
+
+fruits[1] = "mango"
+print(f"Updated fruits list: {fruits}")
+
 # Assignment 2: Create a list of 5 zeros using the multiplication operator *.
+zeros = [0] * 5
+print(f"List of zeros: {zeros}")
