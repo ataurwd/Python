@@ -36,3 +36,11 @@ books = {
 # Assignment 2: Remove the "city" key from the user dictionary using the del keyword.
 del user["city"]
 print(user)
+
+
+# how to write multiplle dictionaries in one line
+persons = ({"name": "Alice", "age": 30}, {"name": "Bob", "age": 25})
+
+#to get the first one
+first_person_name = persons[0]["name"]
+print(f"first person name: {first_person_name} and his age is {persons[0]['age']}")

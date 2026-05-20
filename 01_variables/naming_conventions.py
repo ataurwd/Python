@@ -11,4 +11,5 @@ i = 5
 print(f"User: {user_name}, Total: {total_price}")
 
 # Assignment 1: Create a variable to store the name of a city using snake_case and assign it "New York".
+new_yourk_city = "California"
 # Assignment 2: Correct this variable name to follow Python standards: MyVariableName = 10.
