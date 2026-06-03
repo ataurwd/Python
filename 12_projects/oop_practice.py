@@ -1,4 +1,4 @@
-class CehckoutSystemMonitor:
+class CheckoutSystemMonitor:
     
     def __init__(self):
         self.product_data = {
@@ -45,7 +45,7 @@ class CehckoutSystemMonitor:
             "total": total
         }
         
-checkout = CehckoutSystemMonitor()
+checkout = CheckoutSystemMonitor()
 
 result = checkout.process_checkout(
     101, 102, 103, SAVE10 = True
