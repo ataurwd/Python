@@ -12,6 +12,13 @@ class CheckoutSystemMonitor:
         self.tax_rate = 0.05
         self.currency = "$"
         
+        # calculate all product price
+        total_price = 0
+        for product_id in self.product_data:
+            product = self.product_data[product_id]
+            total_price += product["price"]
+        print(f"total price of all product is {total_price} {self.currency}")
+        
     def process_checkout (self, *item_id, **discount):
         cart = [];
         unique_categories = set()
