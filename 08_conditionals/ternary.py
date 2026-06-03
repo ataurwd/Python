@@ -8,4 +8,8 @@ score = 85
 print(f"Result: {'Pass' if score >= 50 else 'Fail'}")
 
 # Assignment 1: Use a ternary operator to assign "Positive" or "Negative" to a variable based on the value of x.
+x = 10
+result = "Positive" if x % 2 == 0 else "Negative"
+print(result)
+
 # Assignment 2: Write a ternary expression that returns the larger of two numbers a and b.
